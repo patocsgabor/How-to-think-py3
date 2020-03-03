@@ -1,0 +1,7 @@
+p = 10000                             # principal amount
+r = 0.08                              # annual nominal interest rate 
+n = 12                                # number of times the interest is compounden per year
+t =float(input("Years: "))            # number of years
+a = p * (1 + r/n)**n*t                
+
+print("Money:", a)
