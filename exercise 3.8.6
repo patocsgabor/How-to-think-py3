@@ -1,0 +1,47 @@
+# Use for loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
+
+# An equilateral triangle
+# A square
+# A hexagon (six sides)
+# An octagon (eight sides)
+
+import turtle
+
+window = turtle.Screen()
+window.bgcolor("lightgreen")
+
+draw = turtle.Turtle()
+draw.color("blue")
+
+triangle = draw
+for i in range(3):
+    triangle.forward(120)
+    triangle.left(120)
+    
+
+square = draw
+square.penup()
+square.backward(300)
+square.pendown()
+for i in range(4):
+    square.forward(120)
+    square.left(90)
+
+
+hexagon = draw
+hexagon.penup()
+hexagon.right(90)
+hexagon.forward(300)
+hexagon.left(90)
+hexagon.pendown()
+for i in range(6):
+    hexagon.forward(120)
+    hexagon.left(60)
+
+octagon = draw
+octagon.penup()
+octagon.forward(300)
+octagon.pendown()
+for i in range(8):
+    octagon.forward(120)
+    octagon.left(45)
