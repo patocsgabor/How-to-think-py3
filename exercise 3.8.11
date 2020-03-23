@@ -1,0 +1,11 @@
+import turtle
+
+window = turtle.Screen()
+star = turtle.Turtle()
+
+for i in range(5):
+    star.hideturtle()
+    star.left(216)
+    star.forward(100)
+
+window.mainloop()
