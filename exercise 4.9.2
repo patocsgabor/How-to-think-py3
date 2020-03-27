@@ -1,0 +1,35 @@
+# Write a program to draw this. Assume the innermost square is 20 units per side, and each successive square is 20 units bigger, per 
+# side, than the one inside it.
+
+
+
+
+import turtle
+
+def square(n,h):
+    for i in range(4):
+        n.forward(h)
+        n.left(90)
+
+    n.penup()
+    n.right(90)
+    n.forward(10)
+    n.right(90)
+    n.forward(10)
+    n.left(180)
+    n.pendown()
+
+win = turtle.Screen()
+win.bgcolor("lightgreen")
+
+alex = turtle.Turtle()
+alex.pensize(3)
+alex.color("hotpink")
+
+size = 20
+for i in range(5):
+    square(alex, size)
+    size = size + 20
+
+
+win.mainloop()
